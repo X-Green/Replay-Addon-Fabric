@@ -1,10 +1,10 @@
 {
-  "replay_addon.gui.setting_screen.visual": "visual",
-  "replay_addon.config.visual.day_time": "day time",
-  "replay_addon.config.visual.weather": "weather",
-  "replay_addon.enum.weather.default": "default",
-  "replay_addon.enum.weather.clear": "clear",
-  "replay_addon.enum.weather.rain": "rain",
-  "replay_addon.enum.weather.thunder": "thunder",
-  "replay_addon.enum.weather.dry_thunder": "dry thunder"
+  "replay_addon.gui.setting_screen.visual": "视觉效果",
+  "replay_addon.config.visual.day_time": "昼夜时间",
+  "replay_addon.config.visual.weather": "天气",
+  "replay_addon.enum.weather.default": "默认",
+  "replay_addon.enum.weather.clear": "晴朗",
+  "replay_addon.enum.weather.rain": "下雨",
+  "replay_addon.enum.weather.thunder": "雷雨",
+  "replay_addon.enum.weather.dry_thunder": "干打雷不下雨"
 }
