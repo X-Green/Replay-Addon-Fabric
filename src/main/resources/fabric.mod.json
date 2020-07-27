@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "replayaddon",
-  "version": "${version}",
+  "version": "1.15.2",
 
   "name": "Replay addon",
   "description": "Tweak something visual",
@@ -9,10 +9,10 @@
     "eeasee"
   ],
   "contact": {
+    "source": "https://github.com/X-Green/Replay-Addon-Fabric"
   },
 
   "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
 
   "environment": "*",
   "entrypoints": {
