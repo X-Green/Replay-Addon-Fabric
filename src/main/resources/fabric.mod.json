@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "replayaddon",
+  "version": "${version}",
+
+  "name": "Replay addon",
+  "description": "Tweak something visual",
+  "authors": [
+    "eeasee"
+  ],
+  "contact": {
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/modid/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+    ],
+    "modmenu": [
+      "dev.eeasee.replayaddon.compat.modmenu.ModMenuImpl"
+    ]
+  },
+  "mixins": [
+    "replayaddon.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.7.4",
+    "fabric": "*",
+    "minecraft": "1.15.x"
+  },
+  "suggests": {
+    "flamingo": "*"
+  }
+}
