@@ -1,0 +1,10 @@
+{
+  "replay_addon.gui.setting_screen.visual": "visual",
+  "replay_addon.config.visual.day_time": "day time",
+  "replay_addon.config.visual.weather": "weather",
+  "replay_addon.enum.weather.default": "default",
+  "replay_addon.enum.weather.clear": "clear",
+  "replay_addon.enum.weather.rain": "rain",
+  "replay_addon.enum.weather.thunder": "thunder",
+  "replay_addon.enum.weather.dry_thunder": "dry thunder"
+}

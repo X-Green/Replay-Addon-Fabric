@@ -17,9 +17,10 @@
   "environment": "*",
   "entrypoints": {
     "main": [
+      "dev.eeasee.replayaddon.event.Init"
     ],
     "modmenu": [
-      "dev.eeasee.replayaddon.compat.modmenu.ModMenuImpl"
+      "dev.eeasee.replayaddon.compat.ModMenuImpl"
     ]
   },
   "mixins": [
@@ -29,7 +30,8 @@
   "depends": {
     "fabricloader": ">=0.7.4",
     "fabric": "*",
-    "minecraft": "1.15.x"
+    "minecraft": "1.15.x",
+    "malilib": ">=0.10.0-dev.20"
   },
   "suggests": {
     "flamingo": "*"

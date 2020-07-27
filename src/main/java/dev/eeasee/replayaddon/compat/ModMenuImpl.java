@@ -1,4 +1,4 @@
-package dev.eeasee.replayaddon.compat.modmenu;
+package dev.eeasee.replayaddon.compat;
 
 import dev.eeasee.replayaddon.ReplayAddon;
 import dev.eeasee.replayaddon.config.GuiConfig;
