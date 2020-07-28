@@ -1,6 +1,7 @@
 package dev.eeasee.replayaddon.mixin;
 
 import dev.eeasee.replayaddon.config.Configs;
+import dev.eeasee.replayaddon.config.helper.DayTimeHelper;
 import net.minecraft.client.network.ClientPlayNetworkHandler;
 import net.minecraft.client.world.ClientWorld;
 import net.minecraft.network.listener.ClientPlayPacketListener;
@@ -19,5 +20,6 @@ public abstract class ClientPlayNetworkHandlerMixin {
         } else {
             clientWorld.setTimeOfDay(-1 * tweaked);
         }
+        DayTimeHelper.setRealDayTime((int) time);
     }
 }

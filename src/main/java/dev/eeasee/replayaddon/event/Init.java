@@ -1,5 +1,7 @@
 package dev.eeasee.replayaddon.event;
 
+import dev.eeasee.replayaddon.config.Configs;
+import dev.eeasee.replayaddon.config.helper.DayTimeHelper;
 import net.fabricmc.api.ModInitializer;
 
 public class Init implements ModInitializer {
@@ -9,6 +11,7 @@ public class Init implements ModInitializer {
     }
 
     private void registerCallbacks() {
+        Configs.TWEAKED_DAY_TIME.setValueChangeCallback(DayTimeHelper::onFakeDayTimeChanged);
     }
 
 }
