@@ -5,10 +5,14 @@
 Tweak a bunch of things that may help to replay-mod rendering.
 
 ## Current Available Features
-* World Time
+* Day Time
+* Weather
+
+## Experimental
+* Forced Chunk Rendering
 
 ## TODO
-* Forced Chunk Rendering
+
 
 ## Dev
 

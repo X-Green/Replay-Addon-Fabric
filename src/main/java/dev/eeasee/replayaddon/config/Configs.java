@@ -11,10 +11,12 @@ import java.util.List;
 public class Configs {
     public final static ConfigInteger TWEAKED_DAY_TIME;
     public final static ConfigOptionList TWEAKED_WEATHER;
+    public final static ConfigBoolean FORCED_CHUNK_BUILDING;
 
     static {
         TWEAKED_DAY_TIME = Category.VISUAL.add(new ConfigInteger("replay_addon.config.visual.day_time", -1, -1, 23999, "Input -1 as default value"));
         TWEAKED_WEATHER = Category.VISUAL.add(new ConfigOptionList("replay_addon.config.visual.weather", WeatherEnum.DEFAULT, "..."));
+        FORCED_CHUNK_BUILDING = Category.VISUAL.add(new ConfigBoolean("replay_addon.config.visual.forced_chunk_building", false, "Only turn on when necessary cuz SUPER LAGGY!!!"));
     }
 
     public enum Category {
