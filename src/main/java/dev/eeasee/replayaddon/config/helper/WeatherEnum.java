@@ -1,4 +1,4 @@
-package dev.eeasee.replayaddon.config.optionlists;
+package dev.eeasee.replayaddon.config.helper;
 
 import fi.dy.masa.malilib.config.IConfigOptionListEntry;
 import fi.dy.masa.malilib.util.StringUtils;

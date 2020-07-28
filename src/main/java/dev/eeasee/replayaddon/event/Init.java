@@ -10,4 +10,5 @@ public class Init implements ModInitializer {
 
     private void registerCallbacks() {
     }
+
 }

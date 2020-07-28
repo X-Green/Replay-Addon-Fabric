@@ -1,7 +1,7 @@
 package dev.eeasee.replayaddon.config;
 
 import com.google.common.collect.ImmutableList;
-import dev.eeasee.replayaddon.config.optionlists.WeatherEnum;
+import dev.eeasee.replayaddon.config.helper.WeatherEnum;
 import fi.dy.masa.malilib.config.IConfigBase;
 import fi.dy.masa.malilib.config.options.*;
 

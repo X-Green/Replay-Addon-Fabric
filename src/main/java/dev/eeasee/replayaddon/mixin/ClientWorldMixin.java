@@ -1,10 +1,8 @@
 package dev.eeasee.replayaddon.mixin;
 
 import dev.eeasee.replayaddon.config.Configs;
-import dev.eeasee.replayaddon.config.optionlists.WeatherEnum;
+import dev.eeasee.replayaddon.config.helper.WeatherEnum;
 import fi.dy.masa.malilib.config.IConfigOptionListEntry;
-import net.fabricmc.api.EnvType;
-import net.fabricmc.api.Environment;
 import net.minecraft.client.world.ClientWorld;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.profiler.Profiler;
@@ -21,25 +19,6 @@ import java.util.function.BiFunction;
 public abstract class ClientWorldMixin extends World{
     protected ClientWorldMixin(LevelProperties levelProperties, DimensionType dimensionType, BiFunction<World, Dimension, ChunkManager> chunkManagerProvider, Profiler profiler, boolean isClient) {
         super(levelProperties, dimensionType, chunkManagerProvider, profiler, isClient);
-    }
-
-    @Override
-    public float getMoonSize() {
-        int tweakedDayTime = Configs.TWEAKED_DAY_TIME.getIntegerValue();
-        return Dimension.MOON_PHASE_TO_SIZE[this.getDimension().getMoonPhase((tweakedDayTime == -1) ? this.getLevelProperties().getTimeOfDay() : tweakedDayTime)];
-    }
-
-    @Override
-    public float getSkyAngle(float tickDelta) {
-        int tweakedDayTime = Configs.TWEAKED_DAY_TIME.getIntegerValue();
-        return this.getDimension().getSkyAngle((tweakedDayTime == -1) ? this.getLevelProperties().getTimeOfDay() : tweakedDayTime, tickDelta);
-    }
-
-    @Override
-    @Environment(EnvType.CLIENT)
-    public int getMoonPhase() {
-        int tweakedDayTime = Configs.TWEAKED_DAY_TIME.getIntegerValue();
-        return this.getDimension().getMoonPhase((tweakedDayTime == -1) ? this.getLevelProperties().getTimeOfDay() : tweakedDayTime);
     }
 
     @Override
