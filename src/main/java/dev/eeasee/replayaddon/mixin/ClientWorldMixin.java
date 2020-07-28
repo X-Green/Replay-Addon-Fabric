@@ -17,7 +17,7 @@ import java.util.function.BiFunction;
 
 @Mixin(ClientWorld.class)
 public abstract class ClientWorldMixin extends World{
-    protected ClientWorldMixin(LevelProperties levelProperties, DimensionType dimensionType, BiFunction<World, Dimension, ChunkManager> chunkManagerProvider, Profiler profiler, boolean isClient) {
+    private ClientWorldMixin(LevelProperties levelProperties, DimensionType dimensionType, BiFunction<World, Dimension, ChunkManager> chunkManagerProvider, Profiler profiler, boolean isClient) {
         super(levelProperties, dimensionType, chunkManagerProvider, profiler, isClient);
     }
 
