@@ -13,17 +13,17 @@ sourceCompatibility = JavaVersion.VERSION_1_8
 targetCompatibility = JavaVersion.VERSION_1_8
 
 archivesBaseName = "replay-addon"
-version = "1.0.0-1.15.2"
+version = "1.0.0-1.16.2"
 group = "dev.eeasee"
 
 dependencies {
-    minecraft "com.mojang:minecraft:1.15.2"
-    mappings "net.fabricmc:yarn:1.15.2+build.17:v2"
-    modImplementation "net.fabricmc:fabric-loader:0.9.0+build.204"
-            
-    //Fabric api
-    modImplementation "net.fabricmc.fabric-api:fabric-api:0.16.0+build.321-1.15"
-	
+	minecraft "com.mojang:minecraft:1.16.2"
+	mappings "net.fabricmc:yarn:1.16.2+build.47:v2"
+	modImplementation "net.fabricmc:fabric-loader:0.9.3+build.207"
+
+	//Fabric api
+	modImplementation "net.fabricmc.fabric-api:fabric-api:0.20.2+build.402-1.16"
+
 	modCompile "fi.dy.masa.malilib:malilib-fabric-1.15.2:0.10.0-dev.21+arne.1"
     modCompile "io.github.prospector:modmenu:1.8.5+build.23"
 

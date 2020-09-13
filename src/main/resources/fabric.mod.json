@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "replayaddon",
-  "version": "1.15.2",
+  "version": "1.16.2",
 
   "name": "Replay addon",
   "description": "Tweak something visual",
@@ -30,7 +30,7 @@
   "depends": {
     "fabricloader": ">=0.7.4",
     "fabric": "*",
-    "minecraft": "1.15.x",
+    "minecraft": "1.16.x",
     "malilib": ">=0.10.0-dev.20"
   },
   "suggests": {
